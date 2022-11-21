@@ -1,6 +1,5 @@
 package com.yazdanfar.assignment.dao;
 
-import com.yazdanfar.assignment.dao.enumFiles.SourceType;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,7 +16,7 @@ public class ExerciseEntity implements BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private SourceType source;
+    private String source;
 
     private String codeListCode;
 
@@ -28,9 +27,9 @@ public class ExerciseEntity implements BaseEntity {
 
     private String longDescription;
 
-    private Date fromDate;
+    private String fromDate;
 
-    private Date toDate;
+    private String toDate;
 
     private Integer sortingPriority;
 
